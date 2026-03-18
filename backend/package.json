@@ -1,0 +1,23 @@
+{
+  "name": "communihealth-backend",
+  "version": "1.0.0",
+  "description": "CommuniHealth REST API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "cors": "*",
+    "dotenv": "*",
+    "express": "*",
+    "express-validator": "*",
+    "json2csv": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
