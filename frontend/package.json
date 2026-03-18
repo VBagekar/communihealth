@@ -15,7 +15,9 @@
     "react-dom": "^19.2.4",
     "react-router-dom": "*",
     "recharts": "*",
-    "tailwindcss": "*"
+    "tailwindcss": "*",
+    "postcss": "*",
+    "autoprefixer": "*"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
@@ -26,6 +28,8 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.19",
     "vite": "^8.0.0"
   }
 }
