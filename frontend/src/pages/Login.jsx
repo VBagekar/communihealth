@@ -26,18 +26,6 @@ const Login = () => {
     }
   };
 
-  const autofill = (role) => {
-    if (role === 'admin') {
-      setEmail('admin@communihealth.org');
-      setPassword('Admin@123');
-    } else if (role === 'worker') {
-      setEmail('worker@communihealth.org');
-      setPassword('Worker@123');
-    } else {
-      setEmail('viewer@communihealth.org');
-      setPassword('Viewer@123');
-    }
-  };
 
   return (
     <div className="min-h-screen flex bg-[#fef9f0]">
@@ -132,9 +120,9 @@ const Login = () => {
             <div className="mt-8 border-t border-gray-100 pt-6">
               <p className="text-[11px] text-center text-gray-400 mb-4 font-bold uppercase tracking-widest">Demo Credentials</p>
               <div className="flex justify-center gap-2 flex-wrap">
-                <button type="button" onClick={() => autofill('admin')} className="text-xs px-4 py-2 rounded-lg bg-gray-50 hover:bg-primary/10 hover:text-primary text-gray-600 transition-all border border-gray-200 hover:border-primary/30 shadow-sm hover:shadow">Admin</button>
-                <button type="button" onClick={() => autofill('worker')} className="text-xs px-4 py-2 rounded-lg bg-gray-50 hover:bg-primary/10 hover:text-primary text-gray-600 transition-all border border-gray-200 hover:border-primary/30 shadow-sm hover:shadow">Worker</button>
-                <button type="button" onClick={() => autofill('viewer')} className="text-xs px-4 py-2 rounded-lg bg-gray-50 hover:bg-primary/10 hover:text-primary text-gray-600 transition-all border border-gray-200 hover:border-primary/30 shadow-sm hover:shadow">Viewer</button>
+                <button type="button" onClick={() => { setEmail('admin@communihealth.org'); setPassword('Admin@123'); }} className="text-xs px-4 py-2 rounded-lg bg-gray-50 hover:bg-primary/10 hover:text-primary text-gray-600 transition-all border border-gray-200 hover:border-primary/30 shadow-sm hover:shadow">Admin</button>
+                <button type="button" onClick={() => { setEmail('worker@communihealth.org'); setPassword('Worker@123'); }} className="text-xs px-4 py-2 rounded-lg bg-gray-50 hover:bg-primary/10 hover:text-primary text-gray-600 transition-all border border-gray-200 hover:border-primary/30 shadow-sm hover:shadow">Worker</button>
+                <button type="button" onClick={() => { setEmail('viewer@communihealth.org'); setPassword('Viewer@123'); }} className="text-xs px-4 py-2 rounded-lg bg-gray-50 hover:bg-primary/10 hover:text-primary text-gray-600 transition-all border border-gray-200 hover:border-primary/30 shadow-sm hover:shadow">Viewer</button>
               </div>
             </div>
             
